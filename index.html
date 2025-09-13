@@ -5,12 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Swanky Spot - Garuga Entebbe</title>
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #fff8f0;
-      color: #333;
-    }
+    /* Full-page background with overlay */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('img/logo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+}
+
+/* Overlay for readability */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Adjust transparency */
+  z-index: -1;
+}
+
     header {
       background: linear-gradient(135deg, #ff5722, #ff9800);
       padding: 1rem;
@@ -103,22 +120,25 @@
       padding: 2rem;
       border-radius: 10px;
     }
-    .floating-whatsapp {
-      position: fixed;
-      bottom: 15px;
-      right: 15px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      z-index: 999;
-    }
-    .floating-whatsapp img {
-      width: 55px;
-      height: 55px;
-      border-radius: 50%;
-      cursor: pointer;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-    }
+  .floating-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.floating-whatsapp img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.floating-whatsapp img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+}
     @media (max-width: 600px) {
       header h1 {
         font-size: 1.5rem;
@@ -216,16 +236,12 @@
     <p>📍 Location: Garuga, Entebbe Road</p>
   </section>
 
-  <div class="floating-whatsapp">
-    <a href="https://wa.me/256782589849" target="_blank"><img src="img/1.jpg" alt="WA1"></a>
-    <a href="https://wa.me/256782589849" target="_blank"><img src="img/2.jpg" alt="WA2"></a>
-    <a href="https://wa.me/256782589849" target="_blank"><img src="img/3.jpg" alt="WA3"></a>
-    <a href="https://wa.me/256782589849" target="_blank"><img src="img/4.jpg" alt="WA4"></a>
-    <a href="https://wa.me/256782589849" target="_blank"><img src="img/5.jpg" alt="WA5"></a>
-    <a href="https://wa.me/256782589849" target="_blank"><img src="img/6.jpg" alt="WA6"></a>
-    <a href="https://wa.me/256782589849" target="_blank"><img src="img/7.jpg" alt="WA7"></a>
-    <a href="https://wa.me/256782589849" target="_blank"><img src="img/8.jpg" alt="WA8"></a>
-    <a href="https://wa.me/256782589849" target="_blank"><img src="img/9.jpg" alt="WA9"></a>
-  </div>
+<!-- Floating WhatsApp Button -->
+<div class="floating-whatsapp">
+  <a href="https://wa.me/256782589849" target="_blank">
+    <img src="img/whatsapp.png" alt="Chat on WhatsApp">
+  </a>
+  
+</div>
 </body>
 </html>
