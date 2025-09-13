@@ -66,4 +66,166 @@
       width: 100%;
       height: 250px;
       object-fit: cover;
-      border-r
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover, .menu-images img:hover {
+      transform: scale(1.05);
+    }
+    .menu-details {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .menu-item {
+      background: #fff3e0;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .menu-item h3 {
+      margin: 0 0 0.5rem;
+      color: #e64a19;
+    }
+    .menu-item p {
+      margin: 0.3rem 0;
+    }
+    .map iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 10px;
+    }
+    .contact {
+      background: #ffe0b2;
+      text-align: center;
+      padding: 2rem;
+      border-radius: 10px;
+    }
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      z-index: 999;
+    }
+    .floating-whatsapp img {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      nav a {
+        padding: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="img/logo.jpg" alt="Swanky Spot Logo">
+    <h1>Swanky Spot - Garuga Entebbe</h1>
+    <p>A Place to Meet for Social, Business & Family</p>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#menu">Menu</a>
+    <a href="#map">Location</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-card">💇‍♀️ Salon Services</div>
+      <div class="service-card">🍽️ Restaurant</div>
+      <div class="service-card">🎶 Entertainment</div>
+      <div class="service-card">🎉 Events & Family Spot</div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="img/1.jpg" alt="Gallery 1">
+      <img src="img/2.jpg" alt="Gallery 2">
+      <img src="img/3.jpg" alt="Gallery 3">
+      <img src="img/4.jpg" alt="Gallery 4">
+      <img src="img/5.jpg" alt="Gallery 5">
+      <img src="img/6.jpg" alt="Gallery 6">
+      <img src="img/7.jpg" alt="Gallery 7">
+      <img src="img/8.jpg" alt="Gallery 8">
+      <img src="img/9.jpg" alt="Gallery 9">
+    </div>
+  </section>
+
+  <section id="menu">
+    <h2>Our Menu Highlights</h2>
+    <div class="menu-images">
+      <img src="img/10.jpg" alt="Menu 1">
+      <img src="img/11.jpg" alt="Menu 2">
+      <img src="img/12.jpg" alt="Menu 3">
+    </div>
+    <div class="menu-details">
+      <div class="menu-item">
+        <h3>Grilled Tilapia</h3>
+        <p>Freshly grilled fish served with fries and salad.</p>
+        <p><strong>Price:</strong> UGX 25,000</p>
+      </div>
+      <div class="menu-item">
+        <h3>Chicken Luwombo</h3>
+        <p>A traditional Ugandan dish with tender chicken, peanut sauce, and matooke.</p>
+        <p><strong>Price:</strong> UGX 20,000</p>
+      </div>
+      <div class="menu-item">
+        <h3>Vegetarian Pizza</h3>
+        <p>Thin crust pizza topped with fresh vegetables and cheese.</p>
+        <p><strong>Price:</strong> UGX 18,000</p>
+      </div>
+      <div class="menu-item">
+        <h3>Rolex Special</h3>
+        <p>Popular Ugandan street food – chapati rolled with eggs and veggies.</p>
+        <p><strong>Price:</strong> UGX 5,000</p>
+      </div>
+      <div class="menu-item">
+        <h3>Fruit Platter</h3>
+        <p>A refreshing mix of tropical fruits.</p>
+        <p><strong>Price:</strong> UGX 10,000</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="map" class="map">
+    <h2>Find Us</h2>
+    <iframe src="https://www.google.com/maps?q=Garuga+Entebbe+Road&output=embed"></iframe>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>📞 Call: 0782589849</p>
+    <p>📍 Location: Garuga, Entebbe Road</p>
+  </section>
+
+  <div class="floating-whatsapp">
+    <a href="https://wa.me/256782589849" target="_blank"><img src="img/1.jpg" alt="WA1"></a>
+    <a href="https://wa.me/256782589849" target="_blank"><img src="img/2.jpg" alt="WA2"></a>
+    <a href="https://wa.me/256782589849" target="_blank"><img src="img/3.jpg" alt="WA3"></a>
+    <a href="https://wa.me/256782589849" target="_blank"><img src="img/4.jpg" alt="WA4"></a>
+    <a href="https://wa.me/256782589849" target="_blank"><img src="img/5.jpg" alt="WA5"></a>
+    <a href="https://wa.me/256782589849" target="_blank"><img src="img/6.jpg" alt="WA6"></a>
+    <a href="https://wa.me/256782589849" target="_blank"><img src="img/7.jpg" alt="WA7"></a>
+    <a href="https://wa.me/256782589849" target="_blank"><img src="img/8.jpg" alt="WA8"></a>
+    <a href="https://wa.me/256782589849" target="_blank"><img src="img/9.jpg" alt="WA9"></a>
+  </div>
+</body>
+</html>
