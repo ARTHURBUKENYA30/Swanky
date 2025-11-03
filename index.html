@@ -16,7 +16,12 @@
       background: linear-gradient(90deg, #000000, #003366);
       color: white;
       text-align: center;
-      padding: 60px 20px;
+      padding: 50px 20px;
+    }
+    header img {
+      width: 120px;
+      height: auto;
+      margin-bottom: 15px;
     }
     header h1 {
       font-size: 2.5em;
@@ -67,6 +72,22 @@
       background-color: #003366;
       color: white;
     }
+    .cta {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .cta a {
+      background-color: #003366;
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .cta a:hover {
+      background-color: #0055aa;
+    }
     footer {
       background: #003366;
       color: white;
@@ -78,10 +99,24 @@
       color: #00ccff;
       text-decoration: none;
     }
+    .social-icons {
+      margin-top: 15px;
+    }
+    .social-icons img {
+      width: 30px;
+      height: 30px;
+      margin: 0 8px;
+      vertical-align: middle;
+      transition: opacity 0.3s;
+    }
+    .social-icons img:hover {
+      opacity: 0.7;
+    }
     @media (max-width: 768px) {
       header h1 { font-size: 2em; }
       section { padding: 30px 5%; }
       .founders { flex-direction: column; }
+      .cta a { padding: 12px 25px; }
     }
   </style>
 </head>
@@ -89,6 +124,7 @@
 <body>
 
   <header>
+    <img src="img/logo.jpg" alt="Legacy Squash Institute Uganda Logo" />
     <h1>LEGACY SQUASH INSTITUTE UGANDA</h1>
     <p>“Igniting Greatness, Defining Legacy”</p>
     <p><strong>Founded by:</strong> Ivan Wasswa & Paul Kasirye Kadoma</p>
@@ -162,6 +198,9 @@
         </tr>
       </table>
     </div>
+    <div class="cta">
+      <a href="mailto:info@legacysquash.com?subject=Partnership%20or%20Donation%20Inquiry">Become a Partner / Donate</a>
+    </div>
   </section>
 
   <section id="impact">
@@ -173,6 +212,12 @@
 
   <footer>
     <p><strong>Contact:</strong> <a href="mailto:info@legacysquash.com">info@legacysquash.com</a> | Kampala, Uganda</p>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><img src="img/facebook.png" alt="Facebook" /></a>
+      <a href="https://instagram.com" target="_blank"><img src="img/instagram.png" alt="Instagram" /></a>
+      <a href="https://x.com" target="_blank"><img src="img/twitter.png" alt="Twitter" /></a>
+      <a href="https://linkedin.com" target="_blank"><img src="img/linkedin.png" alt="LinkedIn" /></a>
+    </div>
     <p>© 2025 Legacy Squash Institute Uganda. All rights reserved.</p>
   </footer>
 
