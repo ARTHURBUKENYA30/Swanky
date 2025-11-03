@@ -6,6 +6,7 @@
   <title>Legacy Squash Institute Uganda</title>
   <meta name="description" content="Legacy Squash Institute Uganda – Igniting Greatness, Defining Legacy. Developing elite squash athletes and empowering youth through sport and education.">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2d04b0df3.js" crossorigin="anonymous"></script>
   <style>
     :root {
       --navy: #0B1E3F;
@@ -24,8 +25,10 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: var(--light-bg);
       color: var(--dark-text);
+      background: var(--light-bg) url('img/logo.jpg') no-repeat center center fixed;
+      background-size: 600px;
+      background-blend-mode: soft-light;
     }
 
     /* Navigation */
@@ -35,13 +38,10 @@
       width: 100%;
       background: var(--navy);
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       padding: 15px 10%;
       z-index: 1000;
-    }
-    nav img {
-      height: 55px;
     }
     nav ul {
       list-style: none;
@@ -212,22 +212,24 @@
       position: fixed;
       bottom: 25px;
       right: 25px;
-      z-index: 1000;
+      z-index: 2000;
       background: #25D366;
       color: white;
       border-radius: 50%;
-      padding: 15px;
+      width: 70px;
+      height: 70px;
       display: flex;
       justify-content: center;
       align-items: center;
       box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-      transition: transform 0.3s;
+      transition: transform 0.3s, box-shadow 0.3s;
     }
     .whatsapp-float:hover {
       transform: scale(1.1);
+      box-shadow: 3px 3px 12px rgba(0,0,0,0.4);
     }
     .whatsapp-float i {
-      font-size: 35px;
+      font-size: 38px;
     }
 
     @media (max-width: 768px) {
@@ -241,15 +243,22 @@
       header {
         padding: 120px 20px;
       }
+      .whatsapp-float {
+        width: 60px;
+        height: 60px;
+        bottom: 20px;
+        right: 20px;
+      }
+      .whatsapp-float i {
+        font-size: 32px;
+      }
     }
   </style>
-  <script src="https://kit.fontawesome.com/a2d04b0df3.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
   <!-- Navigation -->
   <nav>
-    <img src="img/logo.jpg" alt="LSIU Logo">
     <ul>
       <li><a href="#vision">Vision</a></li>
       <li><a href="#constitution">Constitution</a></li>
@@ -324,7 +333,7 @@
     </div>
   </section>
 
-  <!-- Contact & Map -->
+  <!-- Contact -->
   <section id="contact">
     <h2>Contact Us</h2>
     <p>Email: <a href="mailto:info@legacysquash.com">info@legacysquash.com</a></p>
