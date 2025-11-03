@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Legacy Squash Institute Uganda</title>
   <meta name="description" content="Legacy Squash Institute Uganda – Igniting Greatness, Defining Legacy. Developing elite squash athletes and empowering youth through sport and education.">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/a2d04b0df3.js" crossorigin="anonymous"></script>
+
   <style>
     :root {
       --navy: #0B1E3F;
       --gold: #FFB400;
       --orange: #FF6B00;
-      --light-bg: #f7f9fb;
+      --light-bg: rgba(255, 255, 255, 0.1);
       --dark-text: #1c1c1c;
-      --gray: #555;
+      --gray: #eee;
     }
 
     * {
@@ -26,9 +27,19 @@
       margin: 0;
       font-family: 'Poppins', sans-serif;
       color: var(--dark-text);
-      background: var(--light-bg) url('img/logo.jpg') no-repeat center center fixed;
-      background-size: 600px;
+      background: url('img/logo.jpg') no-repeat center center fixed;
+      background-size: 650px;
+      background-color: #081730;
       background-blend-mode: soft-light;
+    }
+
+    /* ====== Glassmorphism Style ====== */
+    section, header, footer, nav, .highlight-box, .founder, .sponsor-card, .stat {
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 10px;
     }
 
     /* Navigation */
@@ -36,13 +47,16 @@
       position: fixed;
       top: 0;
       width: 100%;
-      background: var(--navy);
+      backdrop-filter: blur(15px);
+      background: rgba(11, 30, 63, 0.6);
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 15px 10%;
       z-index: 1000;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
     }
+
     nav ul {
       list-style: none;
       display: flex;
@@ -50,105 +64,112 @@
       margin: 0;
       padding: 0;
     }
+
     nav a {
       color: white;
       text-decoration: none;
       font-weight: 500;
       transition: color 0.3s;
     }
+
     nav a:hover {
       color: var(--gold);
     }
 
-    /* Hero Section */
+    /* Hero */
     header {
-      background: linear-gradient(rgba(11,30,63,0.8), rgba(11,30,63,0.8)), url('img/hero.jpg') center/cover no-repeat;
+      background: linear-gradient(rgba(11, 30, 63, 0.6), rgba(11, 30, 63, 0.6));
       color: white;
       text-align: center;
       padding: 180px 20px 140px;
+      margin-top: 70px;
     }
+
     header h1 {
       font-size: 3em;
       font-weight: 700;
       letter-spacing: 2px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
     }
+
     header p {
       font-size: 1.2em;
       color: var(--gold);
       margin-top: 10px;
     }
 
-    /* Section Styling */
+    /* Sections */
     section {
       padding: 80px 10%;
+      margin: 40px 0;
       text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
     }
+
     section h2 {
-      color: var(--navy);
+      color: var(--gold);
       font-size: 2.2em;
-      border-bottom: 4px solid var(--orange);
+      border-bottom: 3px solid var(--orange);
       display: inline-block;
       margin-bottom: 25px;
     }
+
     section p {
       line-height: 1.8;
       max-width: 900px;
       margin: 15px auto;
-      color: var(--gray);
+      color: white;
     }
 
-    /* Constitution Summary */
     .highlight-box {
-      background: white;
-      border-left: 5px solid var(--gold);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      border-radius: 8px;
-      padding: 30px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      padding: 25px;
+      border-radius: 10px;
       margin-top: 30px;
-      text-align: left;
+      color: white;
     }
 
-    /* Founders Section */
+    /* Founders */
     .founders {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 30px;
     }
+
     .founder {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      padding: 25px;
       width: 320px;
+      color: white;
+      padding: 25px;
       transition: transform 0.3s;
     }
+
     .founder:hover {
       transform: translateY(-10px);
     }
+
     .founder h3 {
       color: var(--orange);
     }
 
-    /* Sponsorship Section */
+    /* Sponsorship */
     .sponsor-levels {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 25px;
     }
+
     .sponsor-card {
-      background: linear-gradient(145deg, #fff, #f2f2f2);
-      border-top: 5px solid var(--gold);
-      border-radius: 10px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
       width: 270px;
-      padding: 25px;
+      color: white;
       transition: all 0.3s;
     }
+
     .sponsor-card:hover {
       transform: scale(1.05);
-      border-top: 5px solid var(--orange);
+      border: 1px solid var(--gold);
     }
 
     /* Impact */
@@ -159,12 +180,13 @@
       gap: 40px;
       margin-top: 40px;
     }
+
     .stat {
-      background: var(--navy);
       color: white;
-      border-radius: 10px;
       padding: 25px 40px;
+      box-shadow: 0 2px 10px rgba(255,255,255,0.2);
     }
+
     .stat h3 {
       color: var(--gold);
       font-size: 2.4em;
@@ -182,11 +204,12 @@
 
     /* Footer */
     footer {
-      background: var(--navy);
       color: white;
       text-align: center;
       padding: 40px 20px;
+      border-top: 1px solid rgba(255,255,255,0.2);
     }
+
     footer a {
       color: var(--gold);
       text-decoration: none;
@@ -195,14 +218,17 @@
     .social-icons {
       margin: 20px 0;
     }
+
     .social-icons a {
       margin: 0 8px;
       display: inline-block;
     }
+
     .social-icons i {
       font-size: 30px;
       transition: transform 0.3s;
     }
+
     .social-icons a:hover i {
       transform: scale(1.2);
     }
@@ -212,7 +238,7 @@
       position: fixed;
       bottom: 25px;
       right: 25px;
-      z-index: 2000;
+      z-index: 3000;
       background: #25D366;
       color: white;
       border-radius: 50%;
@@ -221,13 +247,15 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+      box-shadow: 2px 2px 15px rgba(0,0,0,0.4);
       transition: transform 0.3s, box-shadow 0.3s;
     }
+
     .whatsapp-float:hover {
       transform: scale(1.1);
-      box-shadow: 3px 3px 12px rgba(0,0,0,0.4);
+      box-shadow: 3px 3px 18px rgba(0,0,0,0.5);
     }
+
     .whatsapp-float i {
       font-size: 38px;
     }
@@ -238,10 +266,7 @@
         align-items: center;
       }
       nav ul {
-        display: none;
-      }
-      header {
-        padding: 120px 20px;
+        flex-wrap: wrap;
       }
       .whatsapp-float {
         width: 60px;
@@ -253,24 +278,9 @@
         font-size: 32px;
       }
     }
-    /* === TRANSPARENCY EFFECT === */
-section, header, footer, nav, .highlight-box, .founder, .sponsor-card, .stat {
-  background-color: rgba(255, 255, 255, 0.85); /* semi-transparent white */
-  backdrop-filter: blur(6px); /* soft blur behind */
-}
-
-/* Make navigation slightly darker for readability */
-nav {
-  background-color: rgba(11, 30, 63, 0.9); /* navy transparent */
-}
-
-/* Adjust footer transparency */
-footer {
-  background-color: rgba(11, 30, 63, 0.92);
-}
-
   </style>
 </head>
+
 <body>
 
   <!-- Navigation -->
