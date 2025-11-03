@@ -3,281 +3,178 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Swanky Spot - Garuga Entebbe</title>
+  <meta name="description" content="Legacy Squash Institute Uganda - Igniting Greatness, Defining Legacy. Empowering athletes through world-class squash training and global exposure." />
+  <title>Legacy Squash Institute Uganda</title>
   <style>
-    /* Full-page background with overlay */
     body {
+      font-family: 'Poppins', sans-serif;
       margin: 0;
-      padding: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-      background: url('img/logo.jpg') no-repeat center center fixed;
-      background-size: cover;
-      position: relative;
-      color: #fff;
-      line-height: 1.6;
-    }
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.7);
-      z-index: -1;
-    }
-
-    /* Header/Navbar */
-    header {
-      background: rgba(255, 87, 34, 0.95);
-      padding: 1rem;
-      text-align: center;
-      color: white;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-    }
-    header img {
-      width: 80px;
-      border-radius: 8px; /* square logo with slight rounding */
-      display: block;
-      margin: 0 auto;
-    }
-    header h1 {
-      margin: 0.5rem 0 0;
-      font-size: 2rem;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-    header p {
-      margin: 0.3rem 0;
-      font-size: 1rem;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      background: #ff7043;
-      flex-wrap: wrap;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 1rem;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-    nav a:hover {
-      background: #e64a19;
-    }
-
-    section {
-      padding: 2rem;
-      max-width: 1200px;
-      margin: auto;
-      text-align: center;
-    }
-    section h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1.5rem;
-      color: #ffd180;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    /* Services */
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-    }
-    .service-card {
-      background: rgba(255, 243, 224, 0.95);
-      border-radius: 15px;
-      padding: 1.5rem;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      color: #333;
-      font-size: 1.2rem;
-      font-weight: bold;
-    }
-
-    /* Gallery + Menu Images */
-    .gallery, .menu-images {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 12px;
-    }
-    .gallery img, .menu-images img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.4);
-      transition: transform 0.3s ease;
-    }
-    .gallery img:hover, .menu-images img:hover {
-      transform: scale(1.05);
-    }
-
-    /* Menu Details */
-    .menu-details {
-      margin-top: 2rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-    }
-    .menu-item {
-      background: rgba(255, 243, 224, 0.95);
-      padding: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-      text-align: left;
-      color: #333;
-    }
-    .menu-item h3 {
-      margin: 0 0 0.5rem;
-      color: #e64a19;
-    }
-
-    /* Map */
-    .map iframe {
-      width: 100%;
-      height: 400px;
-      border: none;
-      border-radius: 10px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.4);
-    }
-
-    /* Contact */
-    .contact {
-      background: rgba(255, 160, 122, 0.9);
-      text-align: center;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+      background-color: #f8f9fa;
       color: #222;
     }
-
-    /* Floating WhatsApp */
-    .floating-whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 1000;
-      animation: pulse 2s infinite;
+    header {
+      background: linear-gradient(90deg, #000000, #003366);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
     }
-    .floating-whatsapp img {
-      width: 65px;
-      height: 65px;
-      border-radius: 50%;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
     }
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.1); }
-      100% { transform: scale(1); }
+    header p {
+      font-size: 1.2em;
+      font-style: italic;
+      color: #d0d0d0;
     }
-
-    /* Responsive */
-    @media (max-width: 600px) {
-      header h1 { font-size: 1.4rem; }
-      nav a { padding: 0.6rem; font-size: 0.9rem; }
-      .gallery img, .menu-images img { height: 180px; }
+    section {
+      padding: 50px 10%;
+    }
+    h2 {
+      color: #003366;
+      border-left: 5px solid #003366;
+      padding-left: 10px;
+    }
+    .content {
+      margin-top: 20px;
+      line-height: 1.8;
+    }
+    .founders {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .founder {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      flex: 1;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      min-width: 250px;
+    }
+    .table {
+      margin-top: 20px;
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .table th, .table td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    .table th {
+      background-color: #003366;
+      color: white;
+    }
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      margin-top: 40px;
+    }
+    footer a {
+      color: #00ccff;
+      text-decoration: none;
+    }
+    @media (max-width: 768px) {
+      header h1 { font-size: 2em; }
+      section { padding: 30px 5%; }
+      .founders { flex-direction: column; }
     }
   </style>
 </head>
+
 <body>
+
   <header>
-    <img src="img/logo.jpg" alt="Swanky Spot Logo">
-    <h1>Swanky Spot - Garuga Entebbe</h1>
-    <p>A Place to Meet for Social, Business & Family</p>
+    <h1>LEGACY SQUASH INSTITUTE UGANDA</h1>
+    <p>“Igniting Greatness, Defining Legacy”</p>
+    <p><strong>Founded by:</strong> Ivan Wasswa & Paul Kasirye Kadoma</p>
   </header>
 
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#menu">Menu</a>
-    <a href="#map">Location</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="services">
-      <div class="service-card">💇‍♀️ Salon Services</div>
-      <div class="service-card">🍽️ Restaurant</div>
-      <div class="service-card">🎶 Entertainment</div>
-      <div class="service-card">🎉 Events & Family Spot</div>
+  <section id="vision">
+    <h2>VISION & MISSION</h2>
+    <div class="content">
+      <p><strong>Vision:</strong> To position Uganda as the hub of squash excellence and innovation in Africa.</p>
+      <p><strong>Mission:</strong> To nurture, educate, and empower athletes through world-class training, values, and global exposure.</p>
     </div>
   </section>
 
-
-
-  <section id="menu">
-    <h2>Our Menu Highlights</h2>
-    <div class="menu-images">
-      <img src="img/10.jpg" alt="Menu 1">
-      <img src="img/11.jpg" alt="Menu 2">
-      <img src="img/12.jpg" alt="Menu 3">
+  <section id="constitution">
+    <h2>CONSTITUTION SUMMARY</h2>
+    <div class="content">
+      <p>Legacy Squash Institute Uganda (LSIU) is a registered non-profit sports academy under the National Council of Sports Act 2023 and affiliated with the Uganda Squash Rackets Association (USRA). It aims to develop elite squash athletes through structured training, community development, and international exposure. The Institute operates under a governance board, upholds integrity and safeguarding standards, and maintains full transparency in financial operations.</p>
     </div>
-    <div class="menu-details">
-      <div class="menu-item">
-        <h3>Grilled Tilapia</h3>
-        <p>Freshly grilled fish served with fries and salad.</p>
-        <p><strong>Price:</strong> UGX 25,000</p>
+  </section>
+
+  <section id="founders">
+    <h2>FOUNDERS’ PROFILES</h2>
+    <div class="founders">
+      <div class="founder">
+        <h3>Ivan Wasswa</h3>
+        <p><strong>Co-Founder & Director of Athlete Development</strong></p>
+        <p>Seed 2 Squash Player in Uganda. Known for exceptional fitness, precision, and leadership both on and off the court.</p>
       </div>
-      <div class="menu-item">
-        <h3>Chicken Luwombo</h3>
-        <p>A traditional Ugandan dish with tender chicken, peanut sauce, and matooke.</p>
-        <p><strong>Price:</strong> UGX 20,000</p>
-      </div>
-      <div class="menu-item">
-        <h3>Vegetarian Pizza</h3>
-        <p>Thin crust pizza topped with fresh vegetables and cheese.</p>
-        <p><strong>Price:</strong> UGX 18,000</p>
-      </div>
-      <div class="menu-item">
-        <h3>Rolex Special</h3>
-        <p>Popular Ugandan street food – chapati rolled with eggs and veggies.</p>
-        <p><strong>Price:</strong> UGX 5,000</p>
-      </div>
-      <div class="menu-item">
-        <h3>Fruit Platter</h3>
-        <p>A refreshing mix of tropical fruits.</p>
-        <p><strong>Price:</strong> UGX 10,000</p>
+      <div class="founder">
+        <h3>Paul Kasirye Kadoma</h3>
+        <p><strong>Co-Founder & Director of Technical Programs</strong></p>
+        <p>Uganda’s Seed 1 Squash Player, admired for his speed, touch, and professionalism. A mentor respected across Africa’s squash community.</p>
       </div>
     </div>
   </section>
 
-    <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <img src="img/1.jpg" alt="Gallery 1">
-      <img src="img/2.jpg" alt="Gallery 2">
-      <img src="img/3.jpg" alt="Gallery 3">
-      <img src="img/4.jpg" alt="Gallery 4">
-      <img src="img/5.jpg" alt="Gallery 5">
-      <img src="img/6.jpg" alt="Gallery 6">
-      <img src="img/7.jpg" alt="Gallery 7">
-      <img src="img/8.jpg" alt="Gallery 8">
-      <img src="img/9.jpg" alt="Gallery 9">
+  <section id="sponsorship">
+    <h2>GLOBAL SPONSORSHIP & DEVELOPMENT PROPOSAL</h2>
+    <div class="content">
+      <p>Legacy Squash Institute Uganda seeks partnerships to build Africa’s first elite squash development hub. This initiative bridges sport, education, and technology to empower youth and elevate Uganda on the global squash stage.</p>
+      <table class="table">
+        <tr>
+          <th>Level</th>
+          <th>Contribution (UGX / USD)</th>
+          <th>Key Benefits</th>
+        </tr>
+        <tr>
+          <td>Title Partner</td>
+          <td>500M+ / $130,000+</td>
+          <td>Naming rights, facility branding, media coverage</td>
+        </tr>
+        <tr>
+          <td>Gold Sponsor</td>
+          <td>200–499M / $52,000–129,000</td>
+          <td>Logo on uniforms, digital promotion, CSR recognition</td>
+        </tr>
+        <tr>
+          <td>Silver Sponsor</td>
+          <td>50–199M / $13,000–51,000</td>
+          <td>Tournament co-branding, banners, press coverage</td>
+        </tr>
+        <tr>
+          <td>Bronze Sponsor</td>
+          <td>10–49M / $2,600–12,999</td>
+          <td>Website visibility, local event presence</td>
+        </tr>
+        <tr>
+          <td>In-Kind Partner</td>
+          <td>Equipment, Nutrition, Transport</td>
+          <td>Official Supplier recognition</td>
+        </tr>
+      </table>
     </div>
-    </section>
-
-  <section id="map" class="map">
-    <h2>Find Us</h2>
-    <iframe src="https://www.google.com/maps?q=Garuga+Entebbe+Road&output=embed"></iframe>
   </section>
 
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>📞 Call: <strong>0782589849</strong></p>
-    <p>📍 Location: Garuga, Entebbe Road</p>
+  <section id="impact">
+    <h2>IMPACT & CALL TO ACTION</h2>
+    <div class="content">
+      <p>Legacy Squash Institute Uganda aims to train 1,000 youth in its first three years, host international tournaments, and provide scholarships for underprivileged athletes. Sponsors will not only gain brand exposure but become partners in shaping Africa’s squash legacy.</p>
+    </div>
   </section>
 
-  <!-- Floating WhatsApp Button -->
-  <div class="floating-whatsapp">
-    <a href="https://wa.me/256782589849" target="_blank">
-      <img src="img/whatsapp.png" alt="Chat on WhatsApp">
-    </a>
-  </div>
+  <footer>
+    <p><strong>Contact:</strong> <a href="mailto:info@legacysquash.com">info@legacysquash.com</a> | Kampala, Uganda</p>
+    <p>© 2025 Legacy Squash Institute Uganda. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
