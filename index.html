@@ -4,27 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Legacy Squash Institute Uganda</title>
-  <meta name="description" content="Igniting Greatness, Defining Legacy — Legacy Squash Institute Uganda is Africa’s hub for squash excellence, innovation, and youth empowerment.">
+  <meta name="description" content="Legacy Squash Institute Uganda – Igniting Greatness, Defining Legacy. Developing elite squash athletes and empowering youth through sport and education.">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --navy: #0B1E3F;
+      --gold: #FFB400;
+      --orange: #FF6B00;
+      --light-bg: #f7f9fb;
+      --dark-text: #1c1c1c;
+      --gray: #555;
+    }
+
     * {
       box-sizing: border-box;
       scroll-behavior: smooth;
     }
+
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      color: #222;
-      background: #f8f9fa;
+      background: var(--light-bg);
+      color: var(--dark-text);
     }
 
-    /* Navigation Bar */
+    /* Navigation */
     nav {
       position: fixed;
-      width: 100%;
       top: 0;
-      left: 0;
-      background: rgba(0, 0, 51, 0.95);
+      width: 100%;
+      background: var(--navy);
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -32,7 +41,7 @@
       z-index: 1000;
     }
     nav img {
-      height: 50px;
+      height: 55px;
     }
     nav ul {
       list-style: none;
@@ -48,45 +57,55 @@
       transition: color 0.3s;
     }
     nav a:hover {
-      color: #FFD700;
+      color: var(--gold);
     }
 
     /* Hero Section */
     header {
-      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 70, 0.6)), url('img/hero.jpg') center/cover no-repeat;
+      background: linear-gradient(rgba(11,30,63,0.8), rgba(11,30,63,0.8)), url('img/hero.jpg') center/cover no-repeat;
       color: white;
       text-align: center;
-      padding: 180px 20px 150px;
+      padding: 180px 20px 140px;
     }
     header h1 {
       font-size: 3em;
       font-weight: 700;
-      margin-bottom: 10px;
       letter-spacing: 2px;
     }
     header p {
       font-size: 1.2em;
-      color: #FFD700;
-      margin-bottom: 20px;
+      color: var(--gold);
+      margin-top: 10px;
     }
 
-    /* Sections */
+    /* Section Styling */
     section {
       padding: 80px 10%;
       text-align: center;
     }
     section h2 {
-      color: #003366;
-      font-size: 2em;
-      border-bottom: 3px solid #FFD700;
+      color: var(--navy);
+      font-size: 2.2em;
+      border-bottom: 4px solid var(--orange);
       display: inline-block;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
     section p {
       line-height: 1.8;
       max-width: 900px;
-      margin: 0 auto 30px;
-      color: #333;
+      margin: 15px auto;
+      color: var(--gray);
+    }
+
+    /* Constitution Summary */
+    .highlight-box {
+      background: white;
+      border-left: 5px solid var(--gold);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      border-radius: 8px;
+      padding: 30px;
+      margin-top: 30px;
+      text-align: left;
     }
 
     /* Founders Section */
@@ -108,11 +127,7 @@
       transform: translateY(-10px);
     }
     .founder h3 {
-      color: #003366;
-      margin-bottom: 5px;
-    }
-    .founder p strong {
-      color: #FFD700;
+      color: var(--orange);
     }
 
     /* Sponsorship Section */
@@ -123,55 +138,36 @@
       gap: 25px;
     }
     .sponsor-card {
-      background: white;
-      padding: 25px;
+      background: linear-gradient(145deg, #fff, #f2f2f2);
+      border-top: 5px solid var(--gold);
       border-radius: 10px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
       width: 270px;
+      padding: 25px;
       transition: all 0.3s;
     }
     .sponsor-card:hover {
       transform: scale(1.05);
-      border-top: 5px solid #FFD700;
-    }
-    .sponsor-card h4 {
-      color: #003366;
-      margin-bottom: 10px;
-    }
-    .cta {
-      margin-top: 30px;
-    }
-    .cta a {
-      background-color: #003366;
-      color: white;
-      padding: 15px 30px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: 600;
-      transition: background 0.3s;
-    }
-    .cta a:hover {
-      background-color: #0055aa;
+      border-top: 5px solid var(--orange);
     }
 
-    /* Impact Counters */
+    /* Impact */
     .stats {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 40px;
-      margin-top: 30px;
+      margin-top: 40px;
     }
     .stat {
-      background: #003366;
+      background: var(--navy);
       color: white;
       border-radius: 10px;
       padding: 25px 40px;
-      text-align: center;
     }
     .stat h3 {
-      font-size: 2.2em;
-      color: #FFD700;
+      color: var(--gold);
+      font-size: 2.4em;
       margin: 0;
     }
 
@@ -184,65 +180,54 @@
       margin-top: 20px;
     }
 
-    /* Newsletter */
-    .newsletter {
-      background: #003366;
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    .newsletter input {
-      padding: 10px 15px;
-      border: none;
-      border-radius: 4px;
-      width: 250px;
-      margin-right: 10px;
-      font-size: 1em;
-    }
-    .newsletter button {
-      padding: 10px 20px;
-      border: none;
-      background: #FFD700;
-      color: #003366;
-      border-radius: 4px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    .newsletter button:hover {
-      background: #ffea70;
-    }
-
     /* Footer */
     footer {
-      background: #002244;
+      background: var(--navy);
       color: white;
       text-align: center;
-      padding: 30px 20px;
+      padding: 40px 20px;
     }
-    .social-icons img {
-      width: 35px;
-      height: 35px;
-      margin: 0 10px;
-      vertical-align: middle;
+    footer a {
+      color: var(--gold);
+      text-decoration: none;
     }
 
-    /* WhatsApp Floating Button */
+    .social-icons {
+      margin: 20px 0;
+    }
+    .social-icons a {
+      margin: 0 8px;
+      display: inline-block;
+    }
+    .social-icons i {
+      font-size: 30px;
+      transition: transform 0.3s;
+    }
+    .social-icons a:hover i {
+      transform: scale(1.2);
+    }
+
+    /* Floating WhatsApp */
     .whatsapp-float {
       position: fixed;
       bottom: 25px;
       right: 25px;
       z-index: 1000;
-    }
-    .whatsapp-float img {
-      width: 60px;
-      height: 60px;
+      background: #25D366;
+      color: white;
       border-radius: 50%;
-      box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
       transition: transform 0.3s;
     }
-    .whatsapp-float img:hover {
+    .whatsapp-float:hover {
       transform: scale(1.1);
+    }
+    .whatsapp-float i {
+      font-size: 35px;
     }
 
     @media (max-width: 768px) {
@@ -258,6 +243,7 @@
       }
     }
   </style>
+  <script src="https://kit.fontawesome.com/a2d04b0df3.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -266,6 +252,7 @@
     <img src="img/logo.jpg" alt="LSIU Logo">
     <ul>
       <li><a href="#vision">Vision</a></li>
+      <li><a href="#constitution">Constitution</a></li>
       <li><a href="#founders">Founders</a></li>
       <li><a href="#sponsorship">Sponsors</a></li>
       <li><a href="#impact">Impact</a></li>
@@ -273,7 +260,7 @@
     </ul>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <header>
     <h1>LEGACY SQUASH INSTITUTE UGANDA</h1>
     <p>“Igniting Greatness, Defining Legacy”</p>
@@ -282,9 +269,18 @@
 
   <!-- Vision -->
   <section id="vision">
-    <h2>Our Vision & Mission</h2>
+    <h2>Vision & Mission</h2>
     <p><strong>Vision:</strong> To position Uganda as the hub of squash excellence and innovation in Africa.</p>
     <p><strong>Mission:</strong> To nurture, educate, and empower athletes through world-class training, values, and global exposure.</p>
+  </section>
+
+  <!-- Constitution -->
+  <section id="constitution">
+    <h2>Constitution Summary</h2>
+    <div class="highlight-box">
+      <p><strong>Legacy Squash Institute Uganda (LSIU)</strong> is a registered non-profit sports academy under the National Council of Sports Act 2023 and affiliated with the Uganda Squash Rackets Association (USRA). It aims to develop elite squash athletes through structured training, community development, and international exposure.</p>
+      <p>The Institute operates under a governance board, upholds integrity and safeguarding standards, and maintains full transparency in financial operations.</p>
+    </div>
   </section>
 
   <!-- Founders -->
@@ -306,61 +302,51 @@
 
   <!-- Sponsorship -->
   <section id="sponsorship">
-    <h2>Global Sponsorship & Development</h2>
-    <p>Partner with us to build Africa’s first elite squash development hub — empowering youth and elevating Uganda on the global squash stage.</p>
+    <h2>Global Sponsorship & Development Proposal</h2>
+    <p>Legacy Squash Institute Uganda seeks partnerships to build Africa’s first elite squash development hub — bridging sport, education, and technology to empower youth and elevate Uganda on the global squash stage.</p>
     <div class="sponsor-levels">
-      <div class="sponsor-card"><h4>Title Partner</h4><p>UGX 500M+ / $130,000+</p><p>Naming rights, branding, media coverage</p></div>
-      <div class="sponsor-card"><h4>Gold Sponsor</h4><p>UGX 200–499M / $52,000–129,000</p><p>Logo on kits, digital promotion</p></div>
-      <div class="sponsor-card"><h4>Silver Sponsor</h4><p>UGX 50–199M / $13,000–51,000</p><p>Tournament co-branding, press coverage</p></div>
-      <div class="sponsor-card"><h4>Bronze Sponsor</h4><p>UGX 10–49M / $2,600–12,999</p><p>Website visibility, event presence</p></div>
-      <div class="sponsor-card"><h4>In-Kind Partner</h4><p>Equipment / Nutrition / Transport</p><p>Official Supplier Recognition</p></div>
+      <div class="sponsor-card"><h4>Title Partner</h4><p>UGX 500M+ / $130,000+</p><p>Naming rights, facility branding, media coverage</p></div>
+      <div class="sponsor-card"><h4>Gold Sponsor</h4><p>UGX 200–499M / $52,000–129,000</p><p>Logo on uniforms, digital promotion, CSR recognition</p></div>
+      <div class="sponsor-card"><h4>Silver Sponsor</h4><p>UGX 50–199M / $13,000–51,000</p><p>Tournament co-branding, banners, press coverage</p></div>
+      <div class="sponsor-card"><h4>Bronze Sponsor</h4><p>UGX 10–49M / $2,600–12,999</p><p>Website visibility, local event presence</p></div>
+      <div class="sponsor-card"><h4>In-Kind Partner</h4><p>Equipment, Nutrition, Transport</p><p>Official Supplier Recognition</p></div>
     </div>
-    <div class="cta"><a href="mailto:info@legacysquash.com">Become a Partner / Donate</a></div>
   </section>
 
   <!-- Impact -->
   <section id="impact">
-    <h2>Impact & Legacy</h2>
-    <p>Legacy Squash Institute Uganda aims to train 1,000 youth in its first three years, host international tournaments, and provide scholarships for underprivileged athletes.</p>
+    <h2>Impact & Call to Action</h2>
+    <p>Legacy Squash Institute Uganda aims to train 1,000 youth in its first three years, host international tournaments, and provide scholarships for underprivileged athletes. Sponsors will not only gain brand exposure but become partners in shaping Africa’s squash legacy.</p>
     <div class="stats">
       <div class="stat"><h3>1,000+</h3><p>Youth to be Trained</p></div>
       <div class="stat"><h3>10+</h3><p>Global Partnerships</p></div>
-      <div class="stat"><h3>5+</h3><p>International Tournaments Planned</p></div>
+      <div class="stat"><h3>5+</h3><p>International Events</p></div>
     </div>
   </section>
 
-  <!-- Location -->
+  <!-- Contact & Map -->
   <section id="contact">
-    <h2>Our Location</h2>
-    <p>Based in Kampala, Uganda — the heart of East African squash excellence.</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.744583214341!2d32.58251977479361!3d0.34759679965822114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb5b5a7c3f29%3A0x94f9c84e3efc4c1!2sKampala%2C%20Uganda!5e0!3m2!1sen!2sug!4v1730666666666!5m2!1sen!2sug" allowfullscreen="" loading="lazy"></iframe>
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:info@legacysquash.com">info@legacysquash.com</a></p>
+    <p>Location: Kampala, Uganda</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.744583214341!2d32.58251977479361!3d0.34759679965822114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb5b5a7c3f29%3A0x94f9c84e3efc4c1!2sKampala%2C%20Uganda!5e0!3m2!1sen!2sug!4v1730666666666!5m2!1sen!2sug" allowfullscreen></iframe>
   </section>
-
-  <!-- Newsletter -->
-  <div class="newsletter">
-    <h2>Join Our Legacy Network</h2>
-    <p>Stay updated on tournaments, sponsorships, and community impact.</p>
-    <form>
-      <input type="email" placeholder="Enter your email" required>
-      <button type="submit">Subscribe</button>
-    </form>
-  </div>
 
   <!-- Footer -->
   <footer>
-    <p><strong>Contact:</strong> <a href="mailto:info@legacysquash.com">info@legacysquash.com</a> | Kampala, Uganda</p>
     <div class="social-icons">
-      <a href="https://facebook.com"><img src="img/facebook.png" alt="Facebook"></a>
-      <a href="https://instagram.com"><img src="img/instagram.png" alt="Instagram"></a>
-      <a href="https://x.com"><img src="img/twitter.png" alt="Twitter"></a>
-      <a href="https://linkedin.com"><img src="img/linkedin.png" alt="LinkedIn"></a>
+      <a href="https://facebook.com" style="color:#1877F2;"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://instagram.com" style="color:#E1306C;"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com" style="color:#1DA1F2;"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://linkedin.com" style="color:#0077B5;"><i class="fab fa-linkedin"></i></a>
+      <a href="https://youtube.com" style="color:#FF0000;"><i class="fab fa-youtube"></i></a>
     </div>
-    <p>© 2025 Legacy Squash Institute Uganda. All rights reserved.</p>
+    <p>© 2025 Legacy Squash Institute Uganda. All Rights Reserved.</p>
   </footer>
 
-  <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/256700122803" class="whatsapp-float" target="_blank">
-    <img src="img/whatsapp.png" alt="Chat on WhatsApp">
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/256700122803" target="_blank" class="whatsapp-float" title="Chat with us on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
   </a>
 
 </body>
