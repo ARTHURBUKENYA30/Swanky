@@ -33,7 +33,6 @@
       background-blend-mode: soft-light;
     }
 
-    /* ====== Glassmorphism Style ====== */
     section, header, footer, nav, .highlight-box, .founder, .sponsor-card, .stat {
       background: rgba(255, 255, 255, 0.12);
       backdrop-filter: blur(10px);
@@ -42,7 +41,6 @@
       border-radius: 10px;
     }
 
-    /* Navigation */
     nav {
       position: fixed;
       top: 0;
@@ -60,6 +58,7 @@
     nav ul {
       list-style: none;
       display: flex;
+      flex-wrap: wrap;
       gap: 25px;
       margin: 0;
       padding: 0;
@@ -76,7 +75,6 @@
       color: var(--gold);
     }
 
-    /* Hero */
     header {
       background: linear-gradient(rgba(11, 30, 63, 0.6), rgba(11, 30, 63, 0.6));
       color: white;
@@ -86,7 +84,7 @@
     }
 
     header h1 {
-      font-size: 3em;
+      font-size: 2.5em;
       font-weight: 700;
       letter-spacing: 2px;
       text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
@@ -98,7 +96,6 @@
       margin-top: 10px;
     }
 
-    /* Sections */
     section {
       padding: 80px 10%;
       margin: 40px 0;
@@ -128,9 +125,17 @@
       border-radius: 10px;
       margin-top: 30px;
       color: white;
+      text-align: left;
     }
 
-    /* Founders */
+    .highlight-box ul {
+      padding-left: 20px;
+    }
+
+    .highlight-box li {
+      margin: 8px 0;
+    }
+
     .founders {
       display: flex;
       flex-wrap: wrap;
@@ -153,7 +158,6 @@
       color: var(--orange);
     }
 
-    /* Sponsorship */
     .sponsor-levels {
       display: flex;
       flex-wrap: wrap;
@@ -165,6 +169,7 @@
       width: 270px;
       color: white;
       transition: all 0.3s;
+      padding: 15px;
     }
 
     .sponsor-card:hover {
@@ -172,7 +177,6 @@
       border: 1px solid var(--gold);
     }
 
-    /* Impact */
     .stats {
       display: flex;
       flex-wrap: wrap;
@@ -193,7 +197,6 @@
       margin: 0;
     }
 
-    /* Map */
     iframe {
       border: none;
       width: 100%;
@@ -202,7 +205,6 @@
       margin-top: 20px;
     }
 
-    /* Footer */
     footer {
       color: white;
       text-align: center;
@@ -233,7 +235,6 @@
       transform: scale(1.2);
     }
 
-    /* Floating WhatsApp */
     .whatsapp-float {
       position: fixed;
       bottom: 25px;
@@ -260,6 +261,16 @@
       font-size: 38px;
     }
 
+    /* Responsive Enhancements */
+    @media (max-width: 992px) {
+      header h1 {
+        font-size: 2.2em;
+      }
+      section {
+        padding: 60px 6%;
+      }
+    }
+
     @media (max-width: 768px) {
       .founders, .sponsor-levels, .stats {
         flex-direction: column;
@@ -267,6 +278,7 @@
       }
       nav ul {
         flex-wrap: wrap;
+        justify-content: center;
       }
       .whatsapp-float {
         width: 60px;
@@ -276,6 +288,18 @@
       }
       .whatsapp-float i {
         font-size: 32px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+      section h2 {
+        font-size: 1.6em;
+      }
+      p {
+        font-size: 0.95em;
       }
     }
   </style>
@@ -305,16 +329,30 @@
   <!-- Vision -->
   <section id="vision">
     <h2>Vision & Mission</h2>
-    <p><strong>Vision:</strong> To position Uganda as the hub of squash excellence and innovation in Africa.</p>
-    <p><strong>Mission:</strong> To nurture, educate, and empower athletes through world-class training, values, and global exposure.</p>
+    <p><strong>Vision:</strong> To ignite greatness and define a lasting legacy through world-class squash education, competition, and character building.</p>
+    <p><strong>Mission:</strong> To nurture disciplined, elite African athletes by providing modern facilities, capacity building, professional coaching, and global exposure.</p>
   </section>
 
   <!-- Constitution -->
   <section id="constitution">
     <h2>Constitution Summary</h2>
     <div class="highlight-box">
-      <p><strong>Legacy Squash Institute Uganda (LSIU)</strong> is a registered non-profit sports academy under the National Council of Sports Act 2023 and affiliated with the Uganda Squash Rackets Association (USRA). It aims to develop elite squash athletes through structured training, community development, and international exposure.</p>
-      <p>The Institute operates under a governance board, upholds integrity and safeguarding standards, and maintains full transparency in financial operations.</p>
+      <p><strong>Legal Foundation:</strong> Registered in Kampala under the Companies Act and licensed by the National Council of Sports (NCS) in compliance with the Uganda National Sports Act 2023. Affiliated to the Uganda Squash Rackets Association (USRA) and aligned with WSF & PSA development standards.</p>
+      <p><strong>Core Objectives:</strong></p>
+      <ul>
+        <li>Talent identification and structured training.</li>
+        <li>Hosting national & international squash events.</li>
+        <li>Promoting integrity, inclusion, and anti-doping compliance.</li>
+        <li>Partnering with schools, sponsors, and sports federations.</li>
+        <li>Strengthening Uganda’s presence in global squash.</li>
+      </ul>
+      <p><strong>Governance Structure:</strong> Managed by a Board of Directors (Chairperson, Vice-Chairperson, Secretary, Treasurer, Technical Director, Founders (ex officio), Athlete Representative). Daily operations are overseen by the Executive Committee under the Director of Operations.</p>
+      <p><strong>Founders:</strong> Ivan Wasswa – Director of Athlete Development; Paul Kasirye Kadoma – Director of Technical Programs.</p>
+      <p><strong>Finance & Compliance:</strong> Transparent accounting, annual audits, and NCS/URA reporting. All revenues are reinvested in player welfare and institutional development.</p>
+      <p><strong>Conduct & Safeguarding:</strong> Enforces anti-corruption, equality, and child protection policies. All youth coaches undergo background checks.</p>
+      <p><strong>Affiliation Duties:</strong> Operate under USRA technical guidance, share player data, and represent Uganda in international circuits through USRA.</p>
+      <p><strong>Amendments & Dissolution:</strong> Requires a two-thirds vote by the General Assembly and ratification by NCS & USRA. Upon dissolution, all assets will be transferred to a recognized sports charity in Uganda.</p>
+      <p><em>Adopted: 2025, Kampala.<br>Witnessed by: Chairperson, USRA.</em></p>
     </div>
   </section>
 
